@@ -10,8 +10,8 @@ notifications = github_client.notifications(participating: true)
 attachments = notifications.map do |n|
   {
     color: '#36a64f',
-    auther_name: n.repository.full_name,
-    auther_link: n.repository.html_url,
+    author_name: n.repository.full_name,
+    author_link: n.repository.html_url,
     title: n.subject.title,
     title_link: n.subject.url,
     footer: n.repository.private ? ':lock:' : ':earth_asia:',
