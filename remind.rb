@@ -2,8 +2,8 @@ require 'json'
 require 'octokit'
 require 'slack-ruby-client'
 
-github_client = Octokit::Client.new(access_token: ENV["GITHUB_API_TOKEN"])
-slack_client = Slack::Web::Client.new(token: ENV["SLACK_API_TOKEN"])
+github_client = Octokit::Client.new(access_token: ENV['GITHUB_API_TOKEN'])
+slack_client = Slack::Web::Client.new(token: ENV['SLACK_API_TOKEN'])
 
 notifications = github_client.notifications(participating: true)
 
@@ -17,7 +17,7 @@ attachments = notifications.map do |n|
     title: n.subject.title,
     title_link: n.subject.url.gsub('api.github.com/repos', 'github.com'),
     footer: n.repository.private ? ':lock:' : ':earth_asia:',
-    ts: n.updated_at.to_i,
+    ts: n.updated_at.to_i
   }
 end
 
@@ -26,4 +26,8 @@ message = {
   attachments: attachments
 }
 
-slack_client.chat_postMessage(channel: ENV['SLACK_CHANNEL'], as_user: true, **message)
+slack_client.chat_postMessage(
+  channel: ENV['SLACK_CHANNEL'],
+  as_user: true,
+  **message
+)
