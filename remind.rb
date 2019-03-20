@@ -7,6 +7,8 @@ slack_client = Slack::Web::Client.new(token: ENV["SLACK_API_TOKEN"])
 
 notifications = github_client.notifications(participating: true)
 
+return if notifications.empty?
+
 attachments = notifications.map do |n|
   {
     color: '#36a64f',
