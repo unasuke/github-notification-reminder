@@ -2,12 +2,21 @@ require 'json'
 require 'octokit'
 require 'slack-ruby-client'
 
+def in_business_time?
+  localtime = Time.now.localtime('+09:00')
+  return false if localtime.saturday? || localtime.sunday?
+  return false if localtime.hour < 10 || localtime.hour > 19
+
+  true
+end
+
 github_client = Octokit::Client.new(access_token: ENV['GITHUB_API_TOKEN'])
 slack_client = Slack::Web::Client.new(token: ENV['SLACK_API_TOKEN'])
 
 notifications = github_client.notifications(participating: true)
 
 return if notifications.empty?
+return unless in_business_time?
 
 attachments = notifications.map do |n|
   {
