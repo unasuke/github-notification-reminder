@@ -6,6 +6,9 @@
 Post participating notifications to your slack channel as bot user.
 
 ## How to use
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/unasuke/github-notification-reminder)
+
 ### Generate Slack bot user token
 ![Slack bot token](https://user-images.githubusercontent.com/4487291/54877492-e529e380-4e62-11e9-9c3a-5ca21174f324.png)
 
