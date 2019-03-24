@@ -1,0 +1,17 @@
+{
+  "name": "GitHub notification reminder",
+  "descriptoion": "Remind your unread participating GitHub notification to post your Slack channel.",
+  "keywords": ["GitHub", "Slack", "Bot", "Notification"],
+  "repository": "https://github.com/unasuke/github-notification-reminder",
+  "env": {
+    "GIHUB_API_TOKEN": {
+      "description": "GitHub personal access token."
+    },
+    "SLACK_API_TOKEN": {
+      "description": "Slack bot token."
+    },
+    "SLACK_CHANNEL": {
+      "description": "Slack channel name to post notifications."
+    }
+  }
+}
