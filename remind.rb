@@ -24,7 +24,7 @@ attachments = notifications.map do |n|
     author_name: n.repository.full_name,
     author_link: n.repository.html_url,
     title: n.subject.title,
-    title_link: n.subject.url.gsub('api.github.com/repos', 'github.com'),
+    title_link: n.subject.url.gsub('api.github.com/repos', 'github.com').gsub('/pulls/', '/pull/'),
     footer: n.repository.private ? ':lock:' : ':earth_asia:',
     ts: n.updated_at.to_i
   }
