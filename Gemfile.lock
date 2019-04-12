@@ -29,7 +29,7 @@ GEM
     sawyer (0.8.1)
       addressable (>= 2.3.5, < 2.6)
       faraday (~> 0.8, < 1.0)
-    slack-ruby-client (0.14.1)
+    slack-ruby-client (0.14.2)
       activesupport
       faraday (>= 0.9)
       faraday_middleware
