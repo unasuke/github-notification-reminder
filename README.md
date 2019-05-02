@@ -1,5 +1,6 @@
 # GitHub notification reminder
 ![https://flat.badgen.net/github/license/unasuke/github-notification-reminder](https://flat.badgen.net/github/license/unasuke/github-notification-reminder)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=unasuke/github-notification-reminder)](https://dependabot.com)
 
 ## What
 ![Screenshot](https://user-images.githubusercontent.com/4487291/54877481-c4618e00-4e62-11e9-8a74-a2542a193bff.png)
