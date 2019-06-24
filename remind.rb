@@ -1,3 +1,5 @@
+# typed: true
+
 require 'json'
 require 'octokit'
 require 'slack-ruby-client'
