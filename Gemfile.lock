@@ -36,6 +36,10 @@ GEM
       gli
       hashie
       websocket-driver
+    sorbet (0.4.4296)
+      sorbet-static (= 0.4.4296)
+    sorbet-runtime (0.4.4296)
+    sorbet-static (0.4.4296-universal-darwin-14)
     thread_safe (0.3.6)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
@@ -50,6 +54,8 @@ DEPENDENCIES
   faye-websocket
   octokit
   slack-ruby-client
+  sorbet
+  sorbet-runtime
 
 BUNDLED WITH
    2.0.1
