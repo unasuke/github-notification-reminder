@@ -1,9 +1,12 @@
-# typed: true
+# typed: strict
 
 require 'json'
 require 'octokit'
 require 'slack-ruby-client'
 
+extend T::Sig
+
+sig { returns(T::Boolean) }
 def in_business_time?
   localtime = Time.now.localtime('+09:00')
   return false if localtime.saturday? || localtime.sunday?
