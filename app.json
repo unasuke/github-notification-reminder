@@ -4,7 +4,7 @@
   "keywords": ["GitHub", "Slack", "Bot", "Notification"],
   "repository": "https://github.com/unasuke/github-notification-reminder",
   "env": {
-    "GIHUB_API_TOKEN": {
+    "GITHUB_API_TOKEN": {
       "description": "GitHub personal access token."
     },
     "SLACK_API_TOKEN": {
