@@ -3,7 +3,7 @@ GEM
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    async (1.28.5)
+    async (1.28.7)
       console (~> 1.10)
       nio4r (~> 2.3)
       timers (~> 4.1)
