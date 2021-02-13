@@ -3,7 +3,7 @@ GEM
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    async (1.28.7)
+    async (1.28.8)
       console (~> 1.10)
       nio4r (~> 2.3)
       timers (~> 4.1)
@@ -35,7 +35,7 @@ GEM
       gli
       hashie
       websocket-driver
-    timers (4.3.2)
+    timers (4.3.3)
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
