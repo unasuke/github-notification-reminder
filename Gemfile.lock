@@ -25,7 +25,7 @@ GEM
     hashie (4.1.0)
     multipart-post (2.1.1)
     nio4r (2.5.7)
-    octokit (4.20.0)
+    octokit (4.21.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
     public_suffix (4.0.6)
