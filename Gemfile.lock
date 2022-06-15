@@ -3,11 +3,11 @@ GEM
   specs:
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
-    async (1.30.2)
+    async (1.30.3)
       console (~> 1.10)
       nio4r (~> 2.3)
       timers (~> 4.1)
-    console (1.15.0)
+    console (1.15.3)
       fiber-local
     faraday (1.10.0)
       faraday-em_http (~> 1.0)
